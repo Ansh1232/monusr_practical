@@ -4,10 +4,12 @@ class prime{
         int count =0;
         boolean Prime=true;
         for(int i=2;i<n;i++){
-            if(n%i==0)count++;
-
+            if(n%i==0) {
+                count++;
+                break;
+            }
         }
-        if (count>=1) {
+        if (count==1) {
             Prime=false;
         }
         if (Prime) {
@@ -18,3 +20,4 @@ class prime{
         }
     }
 }
+
